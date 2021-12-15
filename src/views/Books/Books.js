@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import BookList from '../../components/Books/BookList.js';
+import BookList from '../../components/BookList.js';
 import { fetchBooks } from '../../services/books-route.js';
 
 export default function Books() {
