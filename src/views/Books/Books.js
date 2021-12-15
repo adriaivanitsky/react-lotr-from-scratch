@@ -6,7 +6,7 @@ export default function Books() {
   const [books, setBooks] = useState([]);
   useEffect(() => {
     getBooks(setBooks);
-    console.log(books);
+    // console.log(books);
   }, []);
   //get books from API using fetch and pass the books to <BookList/>
   return (

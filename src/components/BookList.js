@@ -2,7 +2,7 @@
 import React from 'react';
 
 export default function BookList({ books }) {
-  console.log(books);
+  // console.log(books);
   return (
     <div className="books">
       {books.map((book) => (
