@@ -1,4 +1,4 @@
-export async function fetchBooks() {
+export async function getBooks() {
   const resp = await fetch(`${process.env.REACT_APP_SUPABASE_URL}/rest/v1/books?`, {
     headers: {
       apikey: process.env.REACT_APP_SUPABASE_KEY,

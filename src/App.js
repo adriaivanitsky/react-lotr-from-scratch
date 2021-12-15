@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import { Books, Films, Characters } from './views';
 
 function App() {
+  const [books, setBooks]
   return (
     <div className="App">
       <BrowserRouter>
