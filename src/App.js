@@ -1,9 +1,10 @@
 import './App.css';
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
-import { Books, Films, Characters } from './views';
+import Books from './views/Books/Books';
+import Films from './views/Films/Films';
+import Characters from './views/Characters/Characters';
 
 function App() {
-  const [books, setBooks]
   return (
     <div className="App">
       <BrowserRouter>
