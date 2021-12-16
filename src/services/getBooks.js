@@ -5,6 +5,7 @@ export async function getBooks(setBooks) {
       Authorization: `Bearer ${process.env.REACT_APP_SUPABASE_KEY}`,
     },
   });
+
   const data = await resp.json();
 
   const bookData = data.map((book) => {

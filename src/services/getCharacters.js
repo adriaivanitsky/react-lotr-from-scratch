@@ -1,10 +1,10 @@
-export async function fetchCharacters(race, query = '') {
+export async function getCharacters(race, search = '') {
   const urlParams = new URLSearchParams();
   if (race !== 'All') {
     urlParams.set('race', `eq.${race}`);
   }
-  if (query.length > 0) {
-    urlParams.set('name', `ilike.%${query}%`);
+  if (search.length > 0) {
+    urlParams.set('name', `ilike.%${search}%`);
   }
   urlParams.set('select', '*');
 
@@ -18,5 +18,6 @@ export async function fetchCharacters(race, query = '') {
     }
   );
   const data = await resp.json();
+
   return data;
 }
