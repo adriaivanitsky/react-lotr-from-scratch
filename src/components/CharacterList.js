@@ -4,7 +4,7 @@ export default function CharacterList({ characters }) {
   return (
     <div>
       {characters.map((character) => (
-        <p key={character[1]}>{character[1]}</p>
+        <p key={character.name}>{character.name}</p>
       ))}
     </div>
   );

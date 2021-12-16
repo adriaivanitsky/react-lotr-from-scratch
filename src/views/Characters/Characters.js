@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CharacterList from '../../components/CharacterList';
 import { getCharacters } from '../../services/getCharacters';
+import Controls from '../../components/Controls';
 
 export default function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -22,6 +23,7 @@ export default function Characters() {
   return (
     <div>
       <h1>this is the characters page</h1>
+      <Controls {...{ search, setSearch, race, setRace, eventListener }} />
       <CharacterList characters={characters} />
     </div>
   );
