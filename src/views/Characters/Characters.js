@@ -7,10 +7,12 @@ export default function Characters() {
   const [characters, setCharacters] = useState([]);
   const [search, setSearch] = useState([]);
   const [race, setRace] = useState('All');
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await getCharacters(race);
       setCharacters(data);
+      console.log(data);
     };
     fetchData();
   }, [race]);
